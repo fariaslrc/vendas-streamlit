@@ -12,6 +12,8 @@ def main():
 
     st.set_page_config(layout="wide", page_icon="📊")
 
+    st.sidebar.image("fariaslrc.jpg")
+    
     st.title("Dashboard de Vendas 📊")
 
     # Lendo a base de dados
