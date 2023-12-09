@@ -11,8 +11,6 @@ def carregar_dados():
 def main():
 
     st.set_page_config(layout="wide", page_icon="📊")
-
-    st.sidebar.image("fariaslrc.jpg")
     
     st.title("Dashboard de Vendas 📊")
 
@@ -22,6 +20,8 @@ def main():
     ano_filtrado = st.sidebar.selectbox("Filtrar por ano",["Todos",*df["Ano"].unique()])
     # ou
     # ano_filtrado = st.sidebar.selectbox("Filtrar por ano",['Todos'].extend(df['Ano'].unique()) )
+
+    st.sidebar.image("fariaslrc.jpg")
     
     # Aplicar filtro apenas se não for todos
     if ano_filtrado != "Todos":
